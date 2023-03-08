@@ -36,4 +36,42 @@ let student7 = {
 }
 
 
-const stuents = [student1, student2, student3, student4, student5, student6, student7];
+const students = [student1, student2, student3, student4, student5, student6, student7];
+
+// const studentsNames = [];
+
+// students.filter((element)=>{
+//     studentsNames.push(element.name.toUpperCase());
+// });
+
+// console.log(studentsNames);
+
+let studentList = [];
+students.forEach((student)=>{
+    studentList.push(student.name.toUpperCase());
+});
+
+// console.log(studenti);
+
+let studentsOver70Grade = students.filter((element)=>{
+    if(element.grades > 70){
+        return true
+    }else return false;
+});
+
+let over120 = students.filter((element)=>{
+    if(element.grades > 70 && element.id > 120){
+        return true
+    }else return false
+});
+
+
+
+
+
+
+
+
+console.log(studentList);
+console.log(studentsOver70Grade);
+console.log(over120);
