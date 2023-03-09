@@ -18,7 +18,7 @@ Id  Name                Grades
 
 
 
-1.//Si usa array di oggetti cui si applica il metodo filter e si prende l'elemento se l'elemento è nome allora true altrimenti false e si mette dentro un altro array settandolo a uppercase
+1.//Si usa array di oggetti cui si applica il metodo for each e si prende l'elemento se l'elemento è  nome settandolo a uppercase e mettendolo in nuovo
 
 2.//Si  usa array di oggetti cui si applica il metodo filter e si che che elemento.voti > 70 allora true e console.log l'elemento altrimenti false
 
