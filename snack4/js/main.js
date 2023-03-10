@@ -78,19 +78,19 @@ const template = document.querySelector('#team-row');
 const container = document.querySelector('tbody');
 class Teams {
     constructor(name, img){
-        this.name = name;
-        this.img = img
-        this.points = createRndNum(0, maxPoints);
-        this.fouls = createRndNum(0, maxFouls);
+        this.name = name,
+        this.img = img,
+        this.points = createRndNum(0, maxPoints),
+        this.fouls = createRndNum(0, maxFouls)
     }
 }
 
 const teamListSorted = teamList.sort().map(element => element.toLowerCase());
 const teamsImgList = teamListSorted.map(element => `${element}.png`);
 const teamObjList = teamListSorted.map((element, index) => new Teams(element, teamsImgList[index]));
-const teamsSortedByPoints = teamObjList.sort(({points:a}, {points:b}) => b-a)
+const teamsSortedByPoints = teamObjList.sort(({points:a}, {points:b}) => b-a);
 
-console.log(teamObjList);
+// console.log(teamObjList);
 
 createTeamRow(template, teamsSortedByPoints, container);
 
