@@ -62,6 +62,7 @@ function createTeamRow(template, arrayOfObj, container){
         const points = content.querySelector('.points');
         const fouls = content.querySelector('.fouls');
         img.src = `img/${element.img}`;
+        img.alt = `logo-${element.name}`
         name.innerText = element.name;
         points.innerText = element.points;
         fouls.innerText = element.fouls;
